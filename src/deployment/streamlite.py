@@ -185,7 +185,7 @@ data = encoder.fit(X)
 
 # Open the pickled model
 with open(
-    "lgbm_final_model",
+    "src/deployment/lgbm_final_model",
     "rb",
 ) as f:
     lgbm_model = pickle.load(f)
