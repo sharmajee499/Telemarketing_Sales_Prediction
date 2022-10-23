@@ -147,7 +147,7 @@ all_input = [
 
 # Loading the train data
 X = np.load(
-    r"C:\Users\Sande\OneDrive - MNSCU\Telemarketing_Success_Paper\Code+Analytics\Telemarketing_Success_Paper\src\deployment\X.npy",
+    "https://github.com/sharmajee499/Telemarketing_Sales_Prediction/blob/main/src/deployment/X.npy",
     allow_pickle=True,
 )
 
@@ -185,7 +185,7 @@ data = encoder.fit(X)
 
 # Open the pickled model
 with open(
-    r"C:\Users\Sande\OneDrive - MNSCU\Telemarketing_Success_Paper\Code+Analytics\Telemarketing_Success_Paper\src\deployment\lgbm_final_model",
+    "https://github.com/sharmajee499/Telemarketing_Sales_Prediction/blob/main/src/deployment/lgbm_final_model",
     "rb",
 ) as f:
     lgbm_model = pickle.load(f)
