@@ -85,7 +85,7 @@ The methodology section is sub-divided into following section:
 
 ![Web App Screenshot](https://github.com/sharmajee499/Telemarketing_Sales_Prediction/blob/main/graphs/web_app.png)
 
-- The deployed app can be accessed via [link]()
+- The deployed app can be accessed via [link](https://sharmajee499-telemarketing-sales-srcdeploymentstreamlite-9qxnqi.streamlitapp.com)
 
 ### Conslusion
 Even in the era of social media marketing, telemarketing still stands out with its own advantages. Our results show that the plain model outperformed the SMOTED model. The LGBM model achieved an AUC score of 0.8055 on the test set. Our comparison validates previous findings that SMOTE might not be valuable when used in more complex ensemble tree algorithms (Elor and Averbuch-Elor 2022). However, it might add some value to a simple tree or linear model. Explainability remains at the center of any predictive modeling when comes to business decision-making.
