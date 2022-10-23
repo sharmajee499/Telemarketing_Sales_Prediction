@@ -62,7 +62,7 @@ The methodology section is sub-divided into following section:
 - In general, the threshold is set to be 0.5, and so was ours, which means that the predicted probability of an instance that is greater than 0.5 is flagged as positive and less than 0.5 as negative.
 - We ran several experiments on the LGBM model to find the optimal cut-off value. 
 
-![Threshold Optimization](graphs\threshold.png)
+![Threshold Optimization](https://github.com/sharmajee499/Telemarketing_Sales_Prediction/blob/main/graphs/threshold.png)
 
 - From figure, we found that 0.19 are our optimal model. 
 - We trained new model with that threshold and evaluated on the test data.
@@ -83,7 +83,7 @@ The methodology section is sub-divided into following section:
 - Deployed the app that gives marketers ability to input customer's data in order to get the probability of either buying or rejecting the sales call. 
 - The app also shows the features, with the help of LIME, that effects the consumers decision. 
 
-![Web App Screenshot](graphs\web_app.png)
+![Web App Screenshot](https://github.com/sharmajee499/Telemarketing_Sales_Prediction/blob/main/graphs/web_app.png)
 
 - The deployed app can be accessed via [link]()
 
@@ -93,4 +93,7 @@ We implemented a feature importance plot for global explainability. However, the
 interpretability enables identifying the right customer and avoiding annoying calls to uninterested customers. The interpretable methods also help to understand the consumers’ intention so that the business personal can make data-driven unbiased decisions. Such insight will help company to attract the right customer eventually contributing to the company’s growth.
 
 ### Libraries Used
-Plese refer to the [`requirements.txt`]() file. 
+Plese refer to the [`requirements.txt`](https://github.com/sharmajee499/Telemarketing_Sales_Prediction/blob/main/requirements.txt) file. 
+
+### References
+Elor, Y., & Averbuch-Elor, H. (2022). To SMOTE, or not to SMOTE? Arxiv.Org. http://arxiv.org/abs/2201.08528
