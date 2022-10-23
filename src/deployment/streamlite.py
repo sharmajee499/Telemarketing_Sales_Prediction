@@ -147,7 +147,7 @@ all_input = [
 
 # Loading the train data
 X = np.load(
-    'X.npy',
+    'src/deployment/X.npy',
     allow_pickle=True,
 )
 
