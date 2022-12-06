@@ -3,6 +3,7 @@
 # ******************************************************************************
 import pandas as pd
 import numpy as np
+import os
 from sklearn.preprocessing import StandardScaler
 
 # ******************************************************************************
@@ -13,9 +14,11 @@ from sklearn.preprocessing import StandardScaler
 class pre_processing:
     def __init__(
         self,
-        path="C:/Users/Sande/OneDrive - MNSCU/Telemarketing_Success_Paper/Code+Analytics/Telemarketing_Success_Paper/data/raw/bank-additional-full.csv",
+        path=None,
         standard=True,
     ):
+
+        path = os.path.realpath(os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'raw', 'bank-additional-full.csv'))
         """
         Please provide the path as string or it will use the default path
         """
@@ -123,7 +126,7 @@ class pre_processing:
         return df_final
 
     def no_encoded_df(self):
-    
+
         # Remove the variables**************************************************
         var_rem = ["pdays", "default", "duration"]
         df = self._df
@@ -133,7 +136,6 @@ class pre_processing:
         df.interpolate(method="pad", limit=2, inplace=True)
         df.dropna(inplace=True)
         return df
-
 
 
 # ******************************************************************************
@@ -254,7 +256,8 @@ def lime_transform(exp):
             trsf_lst.append(items)
 
     # Converting the list into string
-    trsf_lst = [[" ".join([str(i) for i in trsf_lst[j]])] for j in range(len(trsf_lst))]
+    trsf_lst = [[" ".join([str(i) for i in trsf_lst[j]])]
+                for j in range(len(trsf_lst))]
 
     # converting to numpy array
     trsf_lst = np.array(trsf_lst)

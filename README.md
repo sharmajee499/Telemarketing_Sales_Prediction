@@ -92,5 +92,14 @@ Even in the era of social media marketing, telemarketing still stands out with i
 We implemented a feature importance plot for global explainability. However, the feature importance plot doesn’t give us the ability to further investigate a specific customer. Therefore, LIME is implemented to explain every single observation. To our knowledge, there hasn’t been any research done in a telemarketing domain where LIME was implemented to explore each instance. A robust predictive model with
 interpretability enables identifying the right customer and avoiding annoying calls to uninterested customers. The interpretable methods also help to understand the consumers’ intention so that the business personal can make data-driven unbiased decisions. Such insight will help company to attract the right customer eventually contributing to the company’s growth.
 
-### Libraries Used
+### Libraries Installation
 Plese refer to the [`requirements.txt`]() file. 
+
+Create a new conda enviroment using the above file like:
+- Create the new conda enviroment: 
+   ```conda create env -n telemarketing python=3.8.13```
+- Activcate the env: ```conda activate telemarketing```
+- Change directory to the `requirements.txt` folder by : ```cd /dir/to/requirements.txt```
+- Install the dependencies: ```pip install -r requirements.txt```
+
+**NOTE: Make sure to use the same versions of the packages that are listed in the `requirements.txt` as there are many conflicts among the packages.**
